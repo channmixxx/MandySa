@@ -1,0 +1,93 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 20px;
+}
+
+footer {
+  box-sizing: border-box;
+  position: fixed;
+  width: 24.9666666667rem;
+  height: 3.2666666667rem;
+  opacity: 1;
+  background: #ddd7a2;
+  padding: 0.2666666667rem 3.0666666667rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer ul .footer1 > div {
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(images/footer-icon1.png) no-repeat center/contain;
+}
+
+footer ul .footer2 > div {
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(images/footer-icon2.png) no-repeat center/contain;
+}
+
+footer ul .footer3 > div {
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(images/footer-icon3.png) no-repeat center/contain;
+}
+
+footer ul .footer4 > div {
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(images/footer-icon4.png) no-repeat center/contain;
+}
+
+footer ul span {
+  display: block;
+  width: 1.3333333333rem;
+  height: 0.9333333333rem;
+  margin-top: 0.1666666667rem;
+  opacity: 1;
+  color: #666666;
+  font-size: 0.6666666667rem;
+  font-weight: 400;
+  font-family: "PingFang SC";
+  text-align: center;
+}
+
+footer ul .span-first {
+  width: 1.3666666667rem;
+  color: #3492fd;
+  letter-spacing: 0.3px;
+}

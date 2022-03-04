@@ -1,0 +1,98 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+// 浏览器都有自己的默认样式，以上部分为清除浏览器默认样式
+html {
+  font-size: 20px;
+}
+
+@function px2rem($px) {
+  $rem: $px / 30;
+  @return #{$rem}rem;
+}
+
+footer {
+  box-sizing: border-box;//保证width包含padding
+  position: fixed;
+  width: px2rem(749);
+  height: px2rem(98);
+  opacity: 1;
+  background: rgb(221, 215, 162);
+  padding: px2rem(8) px2rem(92);
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer1 {
+      > div {
+        width: px2rem(48);
+        height: px2rem(48);
+        background: url(images/footer-icon1.png) no-repeat center / contain;
+      }
+    }
+    .footer2 {
+      > div {
+        width: px2rem(48);
+        height: px2rem(48);
+        background: url(images/footer-icon2.png) no-repeat center / contain;
+      }
+    }
+    .footer3 {
+      > div {
+        width: px2rem(48);
+        height: px2rem(48);
+        background: url(images/footer-icon3.png) no-repeat center / contain;
+      }
+    }
+    .footer4 {
+      > div {
+        width: px2rem(48);
+        height: px2rem(48);
+        background: url(images/footer-icon4.png) no-repeat center / contain;
+      }
+    }
+    span {
+      display: block;
+      width: px2rem(40);
+      height: px2rem(28);
+      margin-top: px2rem(5);
+      opacity: 1;
+      color: rgba(102.16,102.16,102.16,1);
+      font-size: px2rem(20);
+      font-weight: 400;
+      font-family: "PingFang SC";
+      text-align: center;
+    }
+    .span-first {
+      width: px2rem(41);
+      color: rgba(52,146,253,1);
+      letter-spacing: 0.3px;
+    }
+  }
+}
