@@ -1,0 +1,28 @@
+button {
+    background-color: rgb(216, 213, 213);
+    border: 0;
+    height: 50px;
+    width: 50px;
+}
+#left {
+    border-radius: 10px 0px 0px 10px;
+}
+#right {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.box {
+    margin: 0 auto;
+    display: flex;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+}
+#number {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(155, 227, 245);
+    line-height: 50px;
+    text-align: center;
+}

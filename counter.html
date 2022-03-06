@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./counter.css">
+    <title>counter</title>
+    <script src="./vue.js"></script>
+</head>
+<body>
+        <div class="box">
+            <button id="left" v-on:click="minus">-</button><span id="number">{{number}}</span><button id="right" v-on:click="plus">+</button>
+        </div>
+
+    <script>
+        var app = new Vue({
+            el: ".box",
+            data: {
+                number: 0,
+            },
+            methods: {
+                minus: function() {
+                    if(this.number===0) {
+                        alert("最小值为0！");
+                        return;
+                    }
+                    this.number--;
+                },
+                plus: function() {
+                    if(this.number===10) {
+                        alert("最大值为10！");
+                        return;
+                    }
+                    this.number++;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
